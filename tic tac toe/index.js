@@ -93,7 +93,7 @@ document.querySelector("#myform").addEventListener("submit", (e) => {
     players.push(player)
 
     localStorage.setItem("players", JSON.stringify(players));
-
+// 
     document.querySelector(".game-container").style.display = "block";
     document.querySelector("#myform").style.display = "none"; 
 
