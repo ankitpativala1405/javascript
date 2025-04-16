@@ -39,15 +39,24 @@ const getdata = async () => {
     data.map((ele)=>{
 
         let td1=document.createElement("td")
-        let td2=document.createElement("td")
-        let td3=document.createElement("td")
-        let div=document.createElement("div")
         td1.innerHTML=ele.firstname
+        let td2=document.createElement("td")
         td2.innerHTML=ele.lastname
+        let td3=document.createElement("td")
         td3.innerHTML=ele.email
-        div.append(td1,td2,td3)
+
+        let button=document.createElement("button")
+        button.innerHTML="delete"
+        button.addEventListener("click", async () => {
+              let req = await fetch(`http://localhost:3000/data/${ele.id}`, {
+                method: "DELETE",
+              });
+              let res = await req.json();
+        })
+        let tr=document.createElement("tr")
+        tr.append(td1,td2,td3,button)
 
 
-        document.getElementById("tablebody").append(div)
+        document.getElementById("tablebody").append(tr)
     })
   }
