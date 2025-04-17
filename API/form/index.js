@@ -9,8 +9,14 @@ document.querySelector("#myform").addEventListener("submit", (event)=> {
         email:document.getElementById("email").value
     }
 
-    create(data)
+    if(ID==-1){create(data)}
+    else{
+      update(data)
+    }
+    
 })
+
+let ID=-1;
 
 const create=async(data)=>{
     let req=await fetch("http://localhost:3000/data",{
@@ -53,10 +59,45 @@ const getdata = async () => {
               });
               let res = await req.json();
         })
+
+        let update=document.createElement("button")
+        update.innerHTML="UPDATE"
+        update.addEventListener("click",async ()=>{
+
+
+
+          ID=ele.id
+          delete ele.id
+
+          // for (const key in data) {
+            // console.log(key, data[key]);
+
+          document.getElementById("firstname").value=ele.firstname
+          document.getElementById("lastname").value=ele.lastname
+          document.getElementById("email").value=ele.email
+
+          document.getElementById("submit").value="UPDATE"
+
+          
+        })
         let tr=document.createElement("tr")
-        tr.append(td1,td2,td3,button)
+        tr.append(td1,td2,td3,button,update)
 
 
         document.getElementById("tablebody").append(tr)
     })
   }
+
+
+  const update=async(data)=>{
+    let req=await fetch(`http://localhost:3000/data/${ID}`,{
+        method:"PATCH",
+        headers:{
+            "Content-Type":"application/json"
+        },
+        body:JSON.stringify(data)
+    })
+    let res=await req.json()
+
+    debugger
+}
