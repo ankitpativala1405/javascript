@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(to right, #83a4d4, #b6fbff);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem;
+    color: #333;
+  }
+  
+  #container {
+    background: #fff;
+    border-radius: 20px;
+    padding: 2rem;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    animation: fadeIn 1s ease;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .current-weather {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .current-weather .icon {
+    font-size: 4rem;
+  }
+  
+  .current-weather .info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .current-weather .details {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .forecast {
+    margin-top: 1rem;
+  }
+  
+  .forecast h3 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  
+  .forecast-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  
+  .forecast-grid .day {
+    background: #f3f3f3;
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+    flex: 1;
+  }
+  
+  .forecast-grid .day p {
+    margin: 0.3rem 0;
+  }
+    

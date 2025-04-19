@@ -1,0 +1,292 @@
+/* Estilos para pantallas grandes */
+body {
+    background-color: #343d4b; /* Establecer el color de fondo del cuerpo */
+  }
+  
+  .center {
+    text-align: center; /* Centrar elementos con clase .center */
+    justify-content: center; /* Centrar elementos en línea */
+    display: block; /* Establecer el display a bloque */
+    margin: auto; /* Establecer margen automático */
+  }
+  
+  .w3-quarter {
+    float: left; /* Colocar elementos a la izquierda */
+    width: 24.99999%; /* Establecer el ancho de las cajas meteorológicas */
+    height: 350px; /* Establecer la altura de las cajas meteorológicas */
+  }
+  
+  .caja_meteorologia_iz {
+    position: relative; /* Establecer la posición relativa */
+    border-radius: 20px; /* Establecer el radio de borde */
+    left: 1%; /* Establecer la posición a la izquierda */
+    color: #fff; /* Establecer el color del texto */
+    font: 125% sans-serif; /* Establecer la fuente y el tamaño del texto */
+    background-image: url("https://images.unsplash.com/photo-1559963110-71b394e7494d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80"); /* Establecer la imagen de fondo */
+    background-size: cover; /* Establecer el tamaño de la imagen */
+    background-position: center; /* Establecer la posición de la imagen */
+  }
+  
+  .caja_meteorologia_iz::before {
+    content: ""; /* Agregar contenido antes del elemento */
+    display: block; /* Establecer el display a bloque */
+    position: absolute; /* Establecer la posición absoluta */
+    top: 0; /* Establecer la posición superior a 0 */
+    left: 0; /* Establecer la posición izquierda a 0 */
+    width: 100%; /* Establecer el ancho al 100% */
+    height: 100%; /* Establecer la altura al 100% */
+    background-color: #fff; /* Establecer el color de fondo */
+    background-color: rgba(
+      0,
+      0,
+      0,
+      0.5
+    ); /* Agregar un color de fondo con opacidad */
+    border-radius: 20px; /* Establecer el radio de borde */
+  }
+  
+  .caja_meteorologia_iz:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+  }
+  
+  .caja_meteorologia_de {
+    background-color: #212730; /* Establecer el color de fondo */
+    border-radius: 20px; /* Establecer el radio de borde */
+  }
+  
+  h2,
+  p {
+    padding: 0 25px 0; /* Establecer el relleno para h2 y p */
+  }
+  
+  p {
+    position: relative; /* Establecer la posición relativa */
+    top: -20px; /* Establecer la posición superior en -20px */
+  }
+  /* Estilos para el encabezado principal */
+  .h1_left {
+    position: absolute; /* Posición absoluta para ajustar a la parte inferior izquierda */
+    bottom: 25px; /* Espacio de 25px hacia arriba desde la parte inferior */
+    left: 16px; /* Espacio de 16px desde el borde izquierdo */
+    font-size: 3vw; /* Tamaño de fuente relativo al ancho de la pantalla */
+    line-height: 1.2; /* Altura de línea del texto */
+  }
+  
+  /* Estilos para un subencabezado */
+  .h3_left {
+    position: absolute; /* Posición absoluta para ajustar a la parte inferior izquierda */
+    bottom: 0px; /* Espacio de 0px hacia arriba desde la parte inferior */
+    left: 16px; /* Espacio de 16px desde el borde izquierdo */
+    font-size: 2vw; /* Tamaño de fuente relativo al ancho de la pantalla */
+    line-height: 1.2; /* Altura de línea del texto */
+  }
+  
+  /* Estilos para una tabla */
+  table {
+    position: relative; /* Posición relativa para permitir el posicionamiento de elementos internos */
+    left: 15px; /* Espacio de 15px desde el borde izquierdo */
+    border-collapse: separate; /* Separar las celdas de la tabla */
+    border-spacing: 15px; /* Espacio entre las celdas de la tabla */
+    width: 85%; /* Ancho del 85% del contenedor */
+    text-align: left; /* Alinear el texto a la izquierda */
+    max-width: 600px; /* Ancho máximo de 600px */
+    margin: 0 auto; /* Centrar horizontalmente en su contenedor */
+  }
+  
+  /* Estilos para las celdas de encabezado y cuerpo de la tabla */
+  th,
+  td {
+    font-size: 18px; /* Tamaño de fuente de 18px */
+    color: #fff; /* Color de fuente blanco */
+  }
+  
+  /* Estilos para las celdas de cuerpo de la tabla */
+  td {
+    text-align: right; /* Alinear el texto a la derecha */
+  }
+  
+  /* Estilos para pantallas medianas */
+  @media only screen and (max-width: 768px) {
+    /* Alinear alineación del texto a la izquierda para elementos con clase 'center' */
+    .center {
+      text-align: left;
+    }
+    /* Ancho del 49.99999% para elementos con clase 'w3-quarter' */
+    .w3-quarter {
+      width: 49.99999%;
+    }
+  }
+  
+  /* Estilos para pantallas pequeñas */
+  @media only screen and (max-width: 480px) {
+    /* Ancho del 100% para elementos con clase 'w3-quarter' */
+    .w3-quarter {
+      width: 100%;
+    }
+    /* Alinear alineación del texto a la izquierda para elementos con clase 'center' */
+    .center {
+      text-align: left;
+    }
+    /* Posición desde el borde izquierdo en 0 y ancho del 100% para la tabla */
+    table {
+      left: 0;
+      width: 100%;
+    }
+    /* Agregar un margen inferior de 15px para elementos de lista sin clase */
+    ul {
+      margin-bottom: 15px;
+    }
+    li {
+      width: 100%;
+      max-width: 100%;
+      text-align: center;
+    }
+    .clima_Semana {
+      width: 100%;
+      margin: 0;
+    }
+  }
+  .clima_Semana {
+    position: relative;
+    left: 0%;
+    border-collapse: separate;
+    border-spacing: 15px;
+    width: 95%;
+    text-align: left;
+    border-radius: 15px;
+  }
+  table,
+  tr:hover {
+    color: red;
+  }
+  
+  /* Lista desordenada de los dias de la semana*/
+  
+  ul {
+    /*padding: 10px 0px 10px;*/
+    margin: 0;
+  }
+  
+  li {
+    display: inline-block;
+    list-style: none;
+    height: 100%;
+    width: 21%; /* Cambiar el tamaño del cuadro blanco de los dias*/
+    /*padding: 5px 0px 0px;*/
+    max-width: 21%;
+    font-size: 1vw;
+    line-height: 1.2;
+  }
+  
+  span {
+    display: block;
+    margin-bottom: 5px;
+    font: 125% sans-serif;
+    height: 35px;
+  }
+  
+  .li_active {
+    background: #fff;
+    color: #222831;
+    border-radius: 10px;
+  }
+  
+  .li_active:hover {
+    transform: scale(1.2);
+    transition: transform 0.1s ease;
+  }
+  
+  /* Zoom elementos de lista */
+  .li_active_temp {
+    display: inline-block;
+    background-color: #222831;
+    color: #ffffff;
+    transition: background-color 0.5s;
+    border-radius: 10px;
+  }
+  
+  .li_active_temp:hover {
+    transform: scale(1.2);
+    transition: transform 0.1s ease;
+    background: #fff;
+    border-radius: 10px;
+    color: #191a1f;
+  }
+  
+  .span_temperature {
+    font-weight: bold;
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    /*Estilos para pantallas medianas*/
+  
+    .w3-quarter {
+      width: 49.99999%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Estilos para pantallas pequeñas */
+  
+    .w3-quarter {
+      width: 100%;
+    }
+  
+    .center {
+      text-align: left;
+    }
+  
+    table {
+      left: 0;
+      width: 100%;
+    }
+  
+    ul {
+      margin-bottom: 15px;
+    }
+  
+    li {
+      width: 100%;
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .clima_Semana ul {
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
+      padding: 0;
+    }
+  
+    .clima_Semana ul li {
+      flex: 0 0 calc(20% - 20px);
+      margin: 0 10px;
+      font-size: 16px;
+    }
+  }
+  
+  .change_Location {
+    color: #fff;
+    font-size: 20px;
+    /* Cambia el valor de la opacidad aquí */
+    border-radius: 20px;
+    width: 70%;
+    height: 40px;
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 255, 255, 2),
+      rgba(255, 0, 255, 5)
+    );
+    text-align: center;
+  }
+  
+  .change_Location:hover {
+    transform: scale(0.9);
+    transition: transform 0.1s ease;
+  }
+  
+  #div_Form {
+    padding: 20px 0 0;
+  }
+  
