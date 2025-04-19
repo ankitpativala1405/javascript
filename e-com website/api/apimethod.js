@@ -27,11 +27,20 @@ let apimethod = {
         })
     },
     emailExists: async (email) => {
-      let request = await fetch(`http://localhost:3000/user?email=${email}`);
-      let response = await request.json();
-      return response;
+      let requestemail = await fetch(`http://localhost:3000/user?email=${email}`);
+      let responseemail = await requestemail.json();
+      
+      if(responseemail.length >0){
+        return responseemail;
+      }
+
+      let requestusername=await fetch(`http://localhost:3000/user?username=${email}`)
+      let responceusername = await requestusername.json();
+      return responceusername
+      
     }
   };
 
   export default apimethod
+
   

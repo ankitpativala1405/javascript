@@ -1,18 +1,12 @@
 {
   "user": [
     {
-      "id": "aef1",
+      "id": "2ecf",
       "name": "ankit",
       "email": "ANKITJ1405@GMAIL.COM",
-      "contact": "1234567890",
-      "password": "Ankit"
-    },
-    {
-      "id": "54b0",
-      "name": "ankit",
-      "email": "dhvanienterprise95@gmail.com",
-      "contact": "8980957637",
-      "password": "Ankit"
+      "contact": "9723665181",
+      "password": "Ankit",
+      "username": "ank5181"
     }
   ]
 }

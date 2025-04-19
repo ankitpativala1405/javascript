@@ -16,10 +16,21 @@ const Navbar = () => {
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="/pages/products.html">Product</a>
                   </li>
+
                   <li class="nav-item">
                   ${
                     isLogged
-                      ? "<span class=nav-link active>Logout</span>"
+                      ? `<span class=nav-link active>${isUser.username}</span>`
+                      : `<a
+                      class="nav-link active"
+                      aria-current="page"
+                      href="/pages/signup.html"
+                      >signup</a>`}
+                  </li>
+                  <li class="nav-item">
+                  ${
+                    isLogged
+                      ? "<span class=nav-link active onclick=handleLogout()>Logout</span>"
                       : `<a
                       class="nav-link active"
                       aria-current="page"
@@ -29,25 +40,13 @@ const Navbar = () => {
                   }
                    
                   </li>
-                  <li class="nav-item">
-                  ${
-                    isLogged
-                      ? `<span class=nav-link active>${isUser.name}</span>`
-                      : `<a
-                      class="nav-link active"
-                      aria-current="page"
-                      href="/pages/signup.html"
-                      >signup</a
-                    >`
-                  }
-                  </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Order
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Cart Items</a></li>
-                      <li><a class="dropdown-item" href="#">Order History</a></li>
+                      <li><a class="dropdown-item" href="/pages/cart.html">Cart Items</a></li>
+                      <li><a class="dropdown-item" href="/pages/orderhistory.html">Order History</a></li>
                       <li><hr class="dropdown-divider"></li>
                       <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
@@ -62,5 +61,12 @@ const Navbar = () => {
           </nav>
     `;
 };
+const handleLogout = () => {
+  localStorage.removeItem("user");
+  localStorage.removeItem("loggedin");
+  window.location.href = "/pages/login.html";
+};
+
+window.handleLogout = handleLogout;
 
 export default Navbar;
