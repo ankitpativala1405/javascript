@@ -25,6 +25,11 @@ let apimethod = {
             },
             body:JSON.stringify(data)
         })
+    },
+    emailExists: async (email) => {
+      let request = await fetch(`http://localhost:3000/user?email=${email}`);
+      let response = await request.json();
+      return response;
     }
   };
 

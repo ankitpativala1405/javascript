@@ -1,3 +1,4 @@
+import apimethod from "../api/apimethod.js";
 import Navbar from "../components/navbar.js";
 import { getValue } from "../utils/helper.js";
 // import apimethod from "./apimethod.js";
@@ -15,6 +16,6 @@ document.getElementById("signupForm").addEventListener("submit",(event)=>{
 
     // console.log(user);
     // apimethod.create(user)
-    apime
+    apimethod.create(user)
     
 })
