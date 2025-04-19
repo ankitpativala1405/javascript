@@ -1,6 +1,6 @@
 import Navbar from "../components/navbar.js";
 import { getValue } from "../utils/helper.js";
-import apimethod from "./apimethod.js";
+// import apimethod from "./apimethod.js";
 document.getElementById("navbar").innerHTML=Navbar();
 
 document.getElementById("signupForm").addEventListener("submit",(event)=>{
@@ -14,6 +14,7 @@ document.getElementById("signupForm").addEventListener("submit",(event)=>{
     }
 
     // console.log(user);
-    apimethod.create(user)
+    // apimethod.create(user)
+    apime
     
 })
