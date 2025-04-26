@@ -24,5 +24,23 @@
       "price": "999",
       "img": "https://dhb8p39s5y2g5.cloudfront.net/rib/1676380787896_FM2626-1_1.jpg"
     }
+  ],
+  "carts": [
+    {
+      "id": "f66b",
+      "name": "gown",
+      "decsr": "best gown",
+      "price": "999",
+      "img": "https://dhb8p39s5y2g5.cloudfront.net/rib/1676380787896_FM2626-1_1.jpg",
+      "quantity": 4
+    },
+    {
+      "id": "8aa8",
+      "name": "dress",
+      "decsr": "v-nack",
+      "price": "250",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrp-EweBBxnAy3aW2mmy9ehXiG-4DTNLkDEA&s",
+      "quantity": 3
+    }
   ]
 }

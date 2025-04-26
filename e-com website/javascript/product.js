@@ -1,26 +1,22 @@
+import { CartMethod } from "../api/cartmethod.js";
 import { ProductMethod } from "../api/productmethod.js";
 import Navbar from "../components/navbar.js";
 import { isLoggedIn } from "../utils/helper.js";
-document.getElementById("navbar").innerHTML=Navbar();
-let  logoutBtn = document.getElementById("logout-btn");
+document.getElementById("navbar").innerHTML = Navbar();
+let logoutBtn = document.getElementById("logout-btn");
 if (logoutBtn) {
   logoutBtn.addEventListener("click", handleLogout);
 }
 isLoggedIn();
 
 //iife function
-(async()=>{
-  let products=await ProductMethod.getAll()
-
-  console.log(products);
-  uiMaker(products)
-  
-})()
-
+(async () => {
+  let products = await ProductMethod.getAll();
+  uiMaker(products);
+})();
 
 const uiMaker = (data) => {
   data.map((product) => {
-
     let div = document.createElement("div");
     div.className = "card mb-4";
     div.style.width = "18rem";
@@ -49,20 +45,26 @@ const uiMaker = (data) => {
     let button = document.createElement("button");
     button.className = "btn btn-primary";
     button.textContent = "Add to Cart";
-    
-    button.addEventListener("click", () => {
-      let cart = JSON.parse(localStorage.getItem("cart")) || []; 
-      cart.push(product); 
-      localStorage.setItem("cart", JSON.stringify(cart)); 
-      alert(`${product.name} added to cart!`); 
-    });
+    button.addEventListener("click", async () => {
+      let CartItem = await CartMethod.GetAll();
 
+      let IsExist = CartItem.find((item) => item.id === product.id);
+
+      if (IsExist) {
+        let upadteitem = { ...IsExist, quantity: IsExist.quantity + 1 };
+        await CartMethod.Update(IsExist.id, upadteitem);
+        alert(`${product.name} has been increase in cart`);
+      } else {
+        let CartAdd = { ...product, quantity: 1 };
+        await CartMethod.Post(CartAdd);
+        console.log("Product added to cart.");
+        alert(`${product.name} added to cart!`);
+      }
+    });
 
     cardBody.append(title, desc, price, button);
     div.append(img, cardBody);
 
-
     document.getElementById("product-container").append(div);
   });
 };
-

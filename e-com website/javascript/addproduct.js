@@ -9,7 +9,7 @@ if (logoutBtn) {
 isLoggedIn()
 
 document.querySelector("#addProductForm").addEventListener("submit", (event) => {
-    event.preventDefault(); // stop the page from refreshing
+    event.preventDefault(); 
 
     let Product = {
         name: getValue("productName"),
@@ -18,7 +18,6 @@ document.querySelector("#addProductForm").addEventListener("submit", (event) => 
         img: getValue("productImage")
     };
 
-    console.log(Product);
     ProductMethod.post(Product);
     alert(`your product has been added... `)
 });
