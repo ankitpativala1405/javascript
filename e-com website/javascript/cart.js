@@ -40,7 +40,5 @@ const uiMaker = (data) => {
 
   const totalAmount = subtotal + 100.0;
   document.getElementById("subtotal").innerText = `Subtotal: ₹ ${subtotal.toFixed(2)}`;
-  document.getElementById("total").innerHTML = `Total: ₹ ${totalAmount.toFixed(
-    2
-  )}`;
+  document.getElementById("total").innerHTML = `Total: ₹ ${totalAmount.toFixed(2)}`;
 };
