@@ -20,11 +20,11 @@ isLoggedIn();
 
 const uiMaker = (data) => {
   data.map((product) => {
-    // Create elements
+
     let div = document.createElement("div");
     div.className = "card mb-4";
     div.style.width = "18rem";
-    div.setAttribute("class","container")
+    div.setAttribute("class", "container");
 
     let img = document.createElement("img");
     img.src = product.img;
@@ -46,11 +46,23 @@ const uiMaker = (data) => {
     price.className = "card-text fw-bold";
     price.textContent = "₹" + product.price;
 
-    // Append elements
-    cardBody.append(title, desc, price);
+    let button = document.createElement("button");
+    button.className = "btn btn-primary";
+    button.textContent = "Add to Cart";
+    
+    button.addEventListener("click", () => {
+      let cart = JSON.parse(localStorage.getItem("cart")) || []; 
+      cart.push(product); 
+      localStorage.setItem("cart", JSON.stringify(cart)); 
+      alert(`${product.name} added to cart!`); 
+    });
+
+
+    cardBody.append(title, desc, price, button);
     div.append(img, cardBody);
 
-    // Add to container
+
     document.getElementById("product-container").append(div);
   });
 };
+
