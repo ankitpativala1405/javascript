@@ -11,36 +11,201 @@
   ],
   "products": [
     {
-      "id": "8aa8",
+      "id": "1234",
       "name": "dress",
-      "decsr": "v-nack",
+      "decsr": "Best dress in clothing category",
       "price": "250",
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrp-EweBBxnAy3aW2mmy9ehXiG-4DTNLkDEA&s"
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrp-EweBBxnAy3aW2mmy9ehXiG-4DTNLkDEA&s",
+      "category": "clothing"
     },
     {
-      "id": "f66b",
+      "id": "5678",
       "name": "gown",
-      "decsr": "best gown",
+      "decsr": "Best gown in clothing category",
       "price": "999",
-      "img": "https://dhb8p39s5y2g5.cloudfront.net/rib/1676380787896_FM2626-1_1.jpg"
+      "img": "https://dhb8p39s5y2g5.cloudfront.net/rib/1676380787896_FM2626-1_1.jpg",
+      "category": "clothing"
+    },
+    {
+      "id": "9101",
+      "name": "laptop",
+      "decsr": "Best laptop in electronics category",
+      "price": "3500",
+      "img": "https://burst.shopifycdn.com/photos/coding-on-laptop.jpg?width=1000&format=pjpg&exif=0&iptc=0",
+      "category": "electronics"
+    },
+    {
+      "id": "1122",
+      "name": "phone",
+      "decsr": "Best phone in electronics category",
+      "price": "1500",
+      "img": "https://images.unsplash.com/photo-1593642634367-d91a135587b5",
+      "category": "electronics"
+    },
+    {
+      "id": "3344",
+      "name": "sofa",
+      "decsr": "Best sofa in furniture category",
+      "price": "2000",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrp-EweBBxnAy3aW2mmy9ehXiG-4DTNLkDEA&s",
+      "category": "furniture"
+    },
+    {
+      "id": "5566",
+      "name": "table",
+      "decsr": "Best table in furniture category",
+      "price": "1500",
+      "img": "https://dhb8p39s5y2g5.cloudfront.net/rib/1676380787896_FM2626-1_1.jpg",
+      "category": "furniture"
+    },
+    {
+      "id": "7788",
+      "name": "chair",
+      "decsr": "Best chair in furniture category",
+      "price": "500",
+      "img": "https://burst.shopifycdn.com/photos/coding-on-laptop.jpg?width=1000&format=pjpg&exif=0&iptc=0",
+      "category": "furniture"
+    },
+    {
+      "id": "9900",
+      "name": "book",
+      "decsr": "Best book in books category",
+      "price": "20",
+      "img": "https://images.unsplash.com/photo-1593642634367-d91a135587b5",
+      "category": "books"
+    },
+    {
+      "id": "2233",
+      "name": "teddy bear",
+      "decsr": "Best teddy bear in toys category",
+      "price": "25",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrp-EweBBxnAy3aW2mmy9ehXiG-4DTNLkDEA&s",
+      "category": "toys"
+    },
+    {
+      "id": "4455",
+      "name": "watch",
+      "decsr": "Best watch in accessories category",
+      "price": "1200",
+      "img": "https://dhb8p39s5y2g5.cloudfront.net/rib/1676380787896_FM2626-1_1.jpg",
+      "category": "accessories"
+    },
+    {
+      "id": "6677",
+      "name": "jacket",
+      "decsr": "Best jacket in clothing category",
+      "price": "800",
+      "img": "https://burst.shopifycdn.com/photos/coding-on-laptop.jpg?width=1000&format=pjpg&exif=0&iptc=0",
+      "category": "clothing"
+    },
+    {
+      "id": "8899",
+      "name": "scarf",
+      "decsr": "Best scarf in clothing category",
+      "price": "50",
+      "img": "https://images.unsplash.com/photo-1593642634367-d91a135587b5",
+      "category": "clothing"
+    },
+    {
+      "id": "1001",
+      "name": "socks",
+      "decsr": "Best socks in clothing category",
+      "price": "10",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrp-EweBBxnAy3aW2mmy9ehXiG-4DTNLkDEA&s",
+      "category": "clothing"
+    },
+    {
+      "id": "2002",
+      "name": "hat",
+      "decsr": "Best hat in accessories category",
+      "price": "100",
+      "img": "https://dhb8p39s5y2g5.cloudfront.net/rib/1676380787896_FM2626-1_1.jpg",
+      "category": "accessories"
+    },
+    {
+      "id": "3003",
+      "name": "gloves",
+      "decsr": "Best gloves in accessories category",
+      "price": "50",
+      "img": "https://burst.shopifycdn.com/photos/coding-on-laptop.jpg?width=1000&format=pjpg&exif=0&iptc=0",
+      "category": "accessories"
+    },
+    {
+      "id": "4004",
+      "name": "sunglasses",
+      "decsr": "Best sunglasses in accessories category",
+      "price": "300",
+      "img": "https://images.unsplash.com/photo-1593642634367-d91a135587b5",
+      "category": "accessories"
+    },
+    {
+      "id": "5005",
+      "name": "shoes",
+      "decsr": "Best shoes in footwear category",
+      "price": "1200",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrp-EweBBxnAy3aW2mmy9ehXiG-4DTNLkDEA&s",
+      "category": "footwear"
+    },
+    {
+      "id": "6006",
+      "name": "sandals",
+      "decsr": "Best sandals in footwear category",
+      "price": "500",
+      "img": "https://dhb8p39s5y2g5.cloudfront.net/rib/1676380787896_FM2626-1_1.jpg",
+      "category": "footwear"
+    },
+    {
+      "id": "7007",
+      "name": "boots",
+      "decsr": "Best boots in footwear category",
+      "price": "1500",
+      "img": "https://burst.shopifycdn.com/photos/coding-on-laptop.jpg?width=1000&format=pjpg&exif=0&iptc=0",
+      "category": "footwear"
+    },
+    {
+      "id": "8008",
+      "name": "heels",
+      "decsr": "Best heels in footwear category",
+      "price": "2000",
+      "img": "https://images.unsplash.com/photo-1593642634367-d91a135587b5",
+      "category": "footwear"
+    },
+    {
+      "id": "9009",
+      "name": "flip-flops",
+      "decsr": "Best flip-flops in footwear category",
+      "price": "150",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrp-EweBBxnAy3aW2mmy9ehXiG-4DTNLkDEA&s",
+      "category": "footwear"
     }
   ],
   "carts": [
     {
-      "id": "f66b",
+      "id": "5678",
       "name": "gown",
-      "decsr": "best gown",
+      "decsr": "Best gown in clothing category",
       "price": "999",
       "img": "https://dhb8p39s5y2g5.cloudfront.net/rib/1676380787896_FM2626-1_1.jpg",
-      "quantity": 4
+      "category": "clothing",
+      "quantity": 2
     },
     {
-      "id": "8aa8",
-      "name": "dress",
-      "decsr": "v-nack",
-      "price": "250",
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrp-EweBBxnAy3aW2mmy9ehXiG-4DTNLkDEA&s",
-      "quantity": 3
+      "id": "6677",
+      "name": "jacket",
+      "decsr": "Best jacket in clothing category",
+      "price": "800",
+      "img": "https://burst.shopifycdn.com/photos/coding-on-laptop.jpg?width=1000&format=pjpg&exif=0&iptc=0",
+      "category": "clothing",
+      "quantity": 2
+    },
+    {
+      "id": "2002",
+      "name": "hat",
+      "decsr": "Best hat in accessories category",
+      "price": "100",
+      "img": "https://dhb8p39s5y2g5.cloudfront.net/rib/1676380787896_FM2626-1_1.jpg",
+      "category": "accessories",
+      "quantity": 2
     }
   ]
 }

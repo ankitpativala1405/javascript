@@ -10,7 +10,40 @@
 <body>
     <div id="navbar"> </div>
 
+    <div>
+        <div class="container mt-4">
+            <div class="row mb-3">
+              <div class="col-md-4" >
+                <select id="SortByPrise" class="form-select">
+                  <option value="">Sort by Price</option>
+                  <option value="lth">Low to High</option>
+                  <option value="htl">High to Low</option>
+                </select>
+                
+              </div>
+              <div class="col-md-4">
+                <select id="categoryFilter" class="form-select">
+                  <option value="All">All Categories</option>
+                  <option value="electronics">electronics</option>
+                  <option value="toys">toys </option>
+                  <option value="books">books</option>
+                  <option value="clothing">clothing </option>
+                  <option value="furniture">furniture </option>
+                  <option value="accessories">accessories </option>
+                  <option value="footwear">footwear</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <input type="range" class="form-range" id="priceRange" min="0" max="5000" step="100">
+                <label for="priceRange" class="form-label">Max Price: ₹<span id="priceValue">5000</span></label>
+              </div>
+            </div>
+          </div>
+          
+    </div>
     <div id="product-container" class="container mt-4"></div>
+
+    
 
 
 </body>
