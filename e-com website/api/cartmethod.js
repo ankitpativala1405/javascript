@@ -33,5 +33,7 @@ export const CartMethod = {
     let req= await fetch(`${apiUrl.carts}/${id}`)
     let res=await req.json()
     return res
-  }
+  },
 };
+
+

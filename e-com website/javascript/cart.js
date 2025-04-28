@@ -22,15 +22,19 @@ const uiMaker = (data) => {
 
   document.getElementById("cart-body").innerHTML = "";
 
-  data.forEach((item) => {
+  data.map((item) => {
     const total = item.price * item.quantity;
     subtotal += total;
-
+  
     const row = `
       <tr>
         <td>${item.name}</td>
         <td>₹ ${item.price}</td>
-        <td>${item.quantity}</td>
+        <td>
+           <button class="decrease-btn" data-id="${item.id}">−</button>
+           <span id="qty-${item.id}">${item.quantity}</span>
+           <button class="increase-btn" data-id="${item.id}">+</button>
+        </td>
         <td>₹ ${total}</td>
         <td><button class="remove-btn" data-id="${item.id}">Remove</button></td>
       </tr>
@@ -42,3 +46,4 @@ const uiMaker = (data) => {
   document.getElementById("subtotal").innerText = `Subtotal: ₹ ${subtotal.toFixed(2)}`;
   document.getElementById("total").innerHTML = `Total: ₹ ${totalAmount.toFixed(2)}`;
 };
+
