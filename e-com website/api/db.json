@@ -9,7 +9,7 @@
       "username": "ank5181"
     }
   ],
- "products": [
+  "products": [
     {
       "id": "1234",
       "name": "dress",
@@ -187,25 +187,7 @@
       "price": "999",
       "img": "https://dhb8p39s5y2g5.cloudfront.net/rib/1676380787896_FM2626-1_1.jpg",
       "category": "clothing",
-      "quantity": 2
-    },
-    {
-      "id": "6677",
-      "name": "jacket",
-      "decsr": "Best jacket in clothing category",
-      "price": "800",
-      "img": "https://burst.shopifycdn.com/photos/coding-on-laptop.jpg?width=1000&format=pjpg&exif=0&iptc=0",
-      "category": "clothing",
-      "quantity": 2
-    },
-    {
-      "id": "2002",
-      "name": "hat",
-      "decsr": "Best hat in accessories category",
-      "price": "100",
-      "img": "https://dhb8p39s5y2g5.cloudfront.net/rib/1676380787896_FM2626-1_1.jpg",
-      "category": "accessories",
-      "quantity": 2
+      "quantity": 1
     }
   ]
 }
