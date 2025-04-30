@@ -1,10 +1,25 @@
-
-#product-container{
+#product-container {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
 
-img{
+img {
     height: 300px;
     width: 150px;
+}
+
+#priceValue {
+    margin-left: 200px;
+}
+
+#container {
+    background-color: #e2dddd;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#cart {
+    display: flex;
+    margin: auto;
 }

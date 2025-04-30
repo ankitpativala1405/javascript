@@ -8,6 +8,7 @@ const uiMaker = (data) => {
       div.className = "card mb-4";
       div.style.width = "18rem";
       div.setAttribute("class", "container");
+      div.setAttribute("id", "container");
   
       let img = document.createElement("img");
       img.src = product.img;
@@ -16,6 +17,7 @@ const uiMaker = (data) => {
   
       let cardBody = document.createElement("div");
       cardBody.className = "card-body";
+      cardBody.setAttribute("class","cardbody")
   
       let title = document.createElement("h5");
       title.className = "card-title";
@@ -32,6 +34,7 @@ const uiMaker = (data) => {
       let button = document.createElement("button");
       button.className = "btn btn-primary";
       button.textContent = "Add to Cart";
+      button.setAttribute("id","cart")
       button.addEventListener("click", async () => {
       
         let CartItem=await CartMethod.GetAll();

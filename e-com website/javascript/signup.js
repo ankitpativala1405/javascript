@@ -15,7 +15,15 @@ document.getElementById("signupForm").addEventListener("submit", (event) => {
     email: getValue("email"),
     contact: getValue("contact"),
     password: getValue("password"),
+    rpassword: getValue("confirmPassword"),
   };
+
+  if(user.password !== user.rpassword){
+    alert("Password And Confirm Password Are Not Same")
+    return
+  }
+
+
 
   let username =
     user.name.substring(0, 3).toLowerCase() +
@@ -25,4 +33,5 @@ document.getElementById("signupForm").addEventListener("submit", (event) => {
 
   apimethod.create(user);
   alert(`Created Account successfully \n your user name is ${username}`)
+  window.location.href="/pages/login.html"
 });

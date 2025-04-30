@@ -7,6 +7,15 @@
       "contact": "9723665181",
       "password": "Ankit",
       "username": "ank5181"
+    },
+    {
+      "id": "0785",
+      "name": "ankit",
+      "email": "ankitj1405@gmail.com",
+      "contact": "9876543210",
+      "password": "Ankit",
+      "rpassword": "Ankit",
+      "username": "ank3210"
     }
   ],
   "products": [
@@ -188,6 +197,15 @@
       "img": "https://dhb8p39s5y2g5.cloudfront.net/rib/1676380787896_FM2626-1_1.jpg",
       "category": "clothing",
       "quantity": 1
+    },
+    {
+      "id": "3344",
+      "name": "sofa",
+      "decsr": "Best sofa in furniture category",
+      "price": "2000",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrp-EweBBxnAy3aW2mmy9ehXiG-4DTNLkDEA&s",
+      "category": "furniture",
+      "quantity": 2
     }
   ]
 }

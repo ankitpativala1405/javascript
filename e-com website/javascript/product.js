@@ -54,3 +54,16 @@ document
       uiMaker(temp);
     }
   });
+
+
+  //filter by sliderbar
+
+  document.getElementById("priceRange").addEventListener("input", async()=>{
+
+    let products = await ProductMethod.getAll();
+    let Price = document.getElementById("priceRange").value;
+    document.getElementById("priceValue").innerHTML = `upto ₹${Price}`;
+  
+    let temp = products.filter((product) => parseFloat(product.price) <= parseFloat(Price));
+    uiMaker(temp); 
+  });
